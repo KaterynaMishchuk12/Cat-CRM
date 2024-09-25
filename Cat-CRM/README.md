@@ -8,4 +8,4 @@ This is a mini CRM project with such used technoligies as HTML, CSS, Sass and mi
 - pattern 7-1 (7 catalogues and 1 file main.scss where all the folders are connected). As long as it`s a mini project I have only 3 folders to connect in main.scss and utils folders, of course.
 - utils folder consists of basic set of helpers: mixins, variables, placeholders and functions. They help to use and reuse common patterns along the whole project applying to the map of colors, fonts etc.
 
-![Cat CRM logo](./src/img/CatCRMpage.png)
+![Cat CRM logo](src/img/CatCRMpage.png)
