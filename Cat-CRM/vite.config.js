@@ -32,23 +32,26 @@ export default defineConfig({
     }),
   ],
   build: {
-    minify: false, // disable minification
-    rollupOptions: {
-      input: Object.fromEntries(
-        glob
-          .sync(["./*.html", "./pages/**/*.html"])
-          .map((file) => [
-            path.relative(
-              __dirname,
-              file.slice(0, file.length - path.extname(file).length)
-            ),
-            fileURLToPath(new URL(file, import.meta.url)),
-          ])
-      ),
-      // output unminified CSS file
-      output: {
-        assetFileNames: "assets/[name].[ext]",
-      },
+    build: {
+      outDir: "dist",
     },
+    // minify: false, // disable minification
+    // rollupOptions: {
+    //   input: Object.fromEntries(
+    //     glob
+    //       .sync(["./*.html", "./pages/**/*.html"])
+    //       .map((file) => [
+    //         path.relative(
+    //           __dirname,
+    //           file.slice(0, file.length - path.extname(file).length)
+    //         ),
+    //         fileURLToPath(new URL(file, import.meta.url)),
+    //       ])
+    //   ),
+    //   // output unminified CSS file
+    //   output: {
+    //     assetFileNames: "assets/[name].[ext]",
+    //   },
+    // },
   },
 });
