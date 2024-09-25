@@ -52,15 +52,3 @@ export default defineConfig({
     },
   },
 });
-
-// import { defineConfig } from "vite";
-
-// export default defineConfig({
-//   plugins: [],
-//   build: {
-//     sourcemap: true,
-//     output: {
-//       assetFileNames: "assets/[name].[ext]",
-//     },
-//   },
-// });
